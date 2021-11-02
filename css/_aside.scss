@@ -1,0 +1,99 @@
+@mixin buttons-suscriptions {
+    padding: 16px;
+    margin: 4px;
+}
+
+aside{
+    
+//background-color: orangered;
+    .perfil-usuario{
+        //background-color: orchid;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        div.perfil-descripcion{
+            display:flex;
+            img{
+                margin-left: 8px;
+                margin-right: 8px;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+            h1{
+                margin: 0px;
+                margin-top: 5px;
+                font-size: 18px;
+            }
+            h3{
+                margin: 0px;
+                font-size: 12px;
+            }
+        }
+       .botones-suscripcion{ 
+                
+            button{
+                @include buttons-suscriptions;
+            }
+        }
+    }
+    .descripcion{
+        display: flex;
+        border-bottom: 0.5px solid #ccc;
+        p{
+            align-items: center;
+            margin-left: 64px;
+        }
+    }
+    .comentarios{
+        //background-color: palegreen;
+        display: flex;
+        justify-content: start;
+         p{
+
+         }
+         button{
+            background: none;
+            border: 0;
+            font-weight: bold;
+         }
+    }
+    .seguidores-comentario{
+        display: flex;
+        align-items: center;
+        input[type=text]{
+            max-width: 1164px;
+            min-width: 72px;
+            width: 100%;
+            height: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            outline: none;
+            border: none;
+            border-bottom: 0.5px solid #000;    
+        }
+        img{
+            margin-left: 8px;
+                margin-right: 8px;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50px;
+        }
+    }
+    .botones-suscripcion-2{
+       display: flex;
+       direction: rtl;
+       flex-direction: row;
+       margin-right: 20px;
+        button{
+            @include buttons-suscriptions;
+        }
+    }
+}
+
+button{
+    cursor:pointer;
+}
+

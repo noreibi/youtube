@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    min-height: 100%;
+
+    header{
+        //background-color: yellowgreen;
+        display: grid;
+        grid-template-columns: 50px  50px auto 300px;
+        align-items: center;
+    }
+
+    .menu-hamburguesa{
+        img{
+            width: 50px;
+            margin-left: 16px;
+        }  
+    }
+    .icons-header{
+        margin: 0px;
+            img{
+            width: 80px;
+            height: 34px;
+            margin-left: 10px;
+            padding-left: 10px;
+            }
+    }
+
+    .header-buscador{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        input[type=text]{
+        max-width: 564px;
+        min-width: 72px;
+        width: 100%;
+        height: 20px;
+        margin-left: 60px;
+        }
+
+        button{
+            width: 40px;
+            height: 26px;
+            padding: 0px;
+            border-bottom: none;
+           
+                img{
+                    width: 10px;
+                }
+        }
+    }
+
+    .icons-varios{
+        a{
+            button{
+                background-color: rgba(0,0,0,0);
+                border: none;
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+}
